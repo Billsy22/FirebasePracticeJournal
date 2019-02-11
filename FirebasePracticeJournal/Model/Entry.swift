@@ -7,17 +7,21 @@
 //
 
 import Foundation
+import Firebase
 
 class Entry: Equatable, Codable {
     
     // MARK: -  Properties
+    let firebaseReference: 
     var title: String
     var body: String
+    let addedByUser: String
     
     // MARK: -  Initializer
     init(title: String, body: String) {
         self.title = title
         self.body = body
+        self.addedByUser = String
     }
     
     // MARK: -  Equatable Protocol

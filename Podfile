@@ -7,5 +7,6 @@ target 'FirebasePracticeJournal' do
 
   # Pods for FirebasePracticeJournal
 	pod 'Firebase/Core'
+	pod 'Firebase/Database'
 
 end
