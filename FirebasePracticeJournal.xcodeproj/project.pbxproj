@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		164F71092211F49E00C1CA77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F71082211F49E00C1CA77 /* AppDelegate.swift */; };
-		164F710B2211F49E00C1CA77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F710A2211F49E00C1CA77 /* ViewController.swift */; };
 		164F710E2211F49E00C1CA77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 164F710C2211F49E00C1CA77 /* Main.storyboard */; };
 		164F71102211F4A000C1CA77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 164F710F2211F4A000C1CA77 /* Assets.xcassets */; };
 		164F71132211F4A000C1CA77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 164F71112211F4A000C1CA77 /* LaunchScreen.storyboard */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		164F71052211F49E00C1CA77 /* FirebasePracticeJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebasePracticeJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		164F71082211F49E00C1CA77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		164F710A2211F49E00C1CA77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		164F710D2211F49E00C1CA77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		164F710F2211F4A000C1CA77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		164F71122211F4A000C1CA77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +54,54 @@
 		164F71072211F49E00C1CA77 /* FirebasePracticeJournal */ = {
 			isa = PBXGroup;
 			children = (
+				164F711D2211F91F00C1CA77 /* Resources */,
+				164F711F2211F93A00C1CA77 /* Model */,
+				164F71202211F94300C1CA77 /* Model Controller */,
+				164F71212211F94A00C1CA77 /* View Controller */,
+				164F711E2211F93200C1CA77 /* Storyboards */,
+			);
+			path = FirebasePracticeJournal;
+			sourceTree = "<group>";
+		};
+		164F711D2211F91F00C1CA77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				164F71082211F49E00C1CA77 /* AppDelegate.swift */,
-				164F710A2211F49E00C1CA77 /* ViewController.swift */,
-				164F710C2211F49E00C1CA77 /* Main.storyboard */,
 				164F710F2211F4A000C1CA77 /* Assets.xcassets */,
-				164F71112211F4A000C1CA77 /* LaunchScreen.storyboard */,
 				164F71142211F4A000C1CA77 /* Info.plist */,
 				164F711A2211F54C00C1CA77 /* GoogleService-Info.plist */,
 			);
-			path = FirebasePracticeJournal;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		164F711E2211F93200C1CA77 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				164F710C2211F49E00C1CA77 /* Main.storyboard */,
+				164F71112211F4A000C1CA77 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		164F711F2211F93A00C1CA77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		164F71202211F94300C1CA77 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		164F71212211F94A00C1CA77 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +176,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				164F710B2211F49E00C1CA77 /* ViewController.swift in Sources */,
 				164F71092211F49E00C1CA77 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZ5N56B84J;
-				INFOPLIST_FILE = FirebasePracticeJournal/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FirebasePracticeJournal/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZ5N56B84J;
-				INFOPLIST_FILE = FirebasePracticeJournal/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FirebasePracticeJournal/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
