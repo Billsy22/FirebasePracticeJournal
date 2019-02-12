@@ -7,26 +7,21 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseDatabase
 
-class Entry: Equatable, Codable {
+class Entry {
     
     // MARK: -  Properties
-    let firebaseReference: 
     var title: String
     var body: String
     let addedByUser: String
+    let firebaseReference: DatabaseReference?
     
-    // MARK: -  Initializer
-    init(title: String, body: String) {
+    // MARK: -  Initializers
+    init(title: String, body: String, addedByUser: String) {
         self.title = title
         self.body = body
-        self.addedByUser = String
-    }
-    
-    // MARK: -  Equatable Protocol
-    static func == (lhs: Entry, rhs: Entry) -> Bool {
-        return lhs.title == rhs.title &&
-        lhs.body == rhs.body
+        self.addedByUser = addedByUser
+        self.firebaseReference = nil
     }
 }
